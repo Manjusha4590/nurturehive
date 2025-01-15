@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import LogoIcon from '@/app/components/logoIcon';
+import LogoIcon from '@/components/logoIcon';
 
 const navItems: string[] = ['About Us', 'Services', 'Portfolio', 'Testimonials', 'Blogs'];
 

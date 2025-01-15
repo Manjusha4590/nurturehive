@@ -124,9 +124,13 @@ footer::-webkit-scrollbar {
   color: black !important;
   padding: 0.3rem 0.6rem !important;
   border-radius: 10px !important;
-  border: white 0.5px solid !important;
-  font-size: 1rem !important;
+  border: #1ae9ab 0.5px solid !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px !important;
+font-weight: 500 !important;
   margin-right: 1rem;
+  width: 110px !important;
+  height: 39px !important;
   text-transform: none !important; /* Add this line to prevent text transformation */
 }
 
@@ -134,3 +138,45 @@ footer::-webkit-scrollbar {
   min-width: auto !important;
   padding: 6px !important; /* Reduced from 8px */
 }
+
+
+.audit-btn{
+  background-color:black !important;
+   border-radius:14px !important;
+    font-size:20px;
+    text-transform: none !important; 
+    font-family: "Poppins", sans-serif;
+    margin-top: 65px !important;
+    font-weight: 500 !important;
+    width: 268px !important;
+  height: 68px !important;
+  line-height: 28px !important;
+}
+
+.basic-text
+  {
+    font-family: "Poppins", sans-serif !important;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    font-size:25px !important;
+font-family: "Poppins" sans-serif !important;
+font-weight: 400 !important;
+  }
+
+  .head-text{
+         font-size: 85px !important;
+         font-family: "Poppins", sans-serif !important;
+         font-weight: 800 !important;
+
+  }
+
+  /* .hex-text{
+    font-size: 26.3px !important;
+    font-family: "Space Grotesk", sans-serif !important;
+    font-weight: 400 !important;
+  } */
+
+  /* .hexagon-top{
+    margin-top: 5px !important;
+  } */
