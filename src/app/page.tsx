@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Box, Container } from "@mui/material";
 import HeaderBar from "@/components/appbar";
+import BlogTemplate from '@/components/blogs/BlogTemplate'
 import IntroSection from "@/components/introduction";
 export default function Home(){
 
@@ -15,6 +16,10 @@ export default function Home(){
   <IntroSection />
 </Box>
 
+<BlogTemplate/>
+
+
 </Box>
+
   )
 }
