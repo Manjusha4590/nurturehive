@@ -1,0 +1,32 @@
+[
+  {
+   
+    "title": "The Power of Personalized Marketing",
+    "description": "In today's digital age, consumers are inundated with countless ...",
+    "image": "/images/Personalized-Marketing.jpg",
+    "link": "/blogs/the-power-of-personalized-marketing.html",
+    "alt": "Personalized Marketing",
+     "blogUrl": "/personalizedMarketing"
+
+       
+    
+  },
+  {
+    "id": 2,
+    "title": "Mastering SEO: The Key to Online Success",
+    "description": "In the digital age, SEO is more important than ever. Here's how to stay ahead...",
+    "image": "/images/mastering-seo.jpg",
+    "link": "/blogs/mastering-seo.html",
+    "alt": "Mastering SEO",
+    "blogUrl": "/masteringSeo"
+  },
+  {
+    "id": 3,
+    "title": "Video Marketing: The New Frontier",
+    "description": "In the age of digital marketing, video is king. Here's why...",
+    "image": "/images/video-marketing.jpg",
+    "link": "/blogs/video-marketing.html",
+    "alt": "Video Marketing",
+    "blogUrl": "/videomarketing"
+  }
+]

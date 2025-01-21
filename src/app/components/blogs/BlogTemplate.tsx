@@ -2,6 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
+import blogData from '@/data/blogsdata.json'
+import { useRouter } from 'next/navigation';
+
 
 import {
   Box,
@@ -23,32 +26,13 @@ function BlogTemplate(): React.JSX.Element {
       },
     },
   });
-  const blogData = [
-    {
-      title: "The Power of Personalized Marketing",
-      description:
-        "In today's digital age, consumers are inundated with countless ...",
-      image: "/images/Personalized-Marketing.jpg",
-      link: "/blogs/the-power-of-personalized-marketing.html",
-      alt: "Personalized Marketing",
-    },
-    {
-      title: "Mastering SEO: The Key to Online Success",
-      description:
-        "In the digital age, SEO is more important than ever. Here's how to stay ahead...",
-      image: "/images/mastering-seo.jpg",
-      link: "/blogs/mastering-seo.html",
-      alt: "Mastering SEO",
-    },
-    {
-      title: "Video Marketing: The New Frontier",
-      description:
-        "In the age of digital marketing, video is king. Here's why...",
-      image: "/images/video-marketing.jpg",
-      link: "/blogs/video-marketing.html",
-      alt: "Video Marketing",
-    },
-  ];
+const router = useRouter()
+  // const handleReadMore = () => {
+
+  //   // Navigate to the blog post page
+  //   router.push(`/blogroute`);
+  // };
+ 
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -74,8 +58,7 @@ function BlogTemplate(): React.JSX.Element {
                     <Typography variant="body2" className="blog-card-body">
                       {blog.description}
                     </Typography>
-                    <Button
-                      href={blog.link}
+                    <Button                     
                       variant="contained"
                       sx={{
                         backgroundColor: "black",
@@ -86,6 +69,7 @@ function BlogTemplate(): React.JSX.Element {
                         cursor: "pointer",
                         top: "30px",
                       }}
+                      onClick={()=>router.push(blog.blogUrl)}
                     >
                       Read More
                     </Button>
@@ -93,8 +77,10 @@ function BlogTemplate(): React.JSX.Element {
                 </Card>
               ))}
             </Box>
+           
           </Box>
         </Box>
+        
       </ThemeProvider>
     </>
   );
