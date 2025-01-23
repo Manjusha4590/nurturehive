@@ -44,8 +44,8 @@ const router = useRouter()
           </Box>
           <Box className="blog-carousel">
             <Box className="blog-cards">
-              {blogData.map((blog) => (
-                <Card className="blog-card">
+              {blogData.map((blog,index) => (
+                <Card className="blog-card" key={index}>
                   <CardMedia
                     className="blog-image"
                     component="img"
