@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import Image from "next/image";
 import {
   Box,
@@ -64,8 +64,7 @@ const ContactPage: React.FC = () => {
       newErrors.message = "Please enter a message";
       setIsvalid(false);
     }
-    setErrors(newErrors);  
-     
+    setErrors(newErrors);       
     return !isValid
    
   }
@@ -81,7 +80,7 @@ const ContactPage: React.FC = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const res = await axios.post(url, formData, {
+        const res = await axios.post(API_GATEWAY_ENDPOINT, formData, {
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
@@ -102,6 +101,7 @@ const ContactPage: React.FC = () => {
     }
    
   };
+ 
   return (
     <>
       <Box id="contact" className="contact-section">
