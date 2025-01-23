@@ -40,10 +40,9 @@ const ContactPage: React.FC = () => {
   const [errors, setErrors] = useState<Partial<FormErrors>>({});
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
-  const [isValid, setIsvalid] = useState(true);
-  const [isSubmit, setIsSubmit] = useState(false);
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const [isValid, setIsvalid] = useState(true);   
   const [open, setOpen] = useState(false); //snakbar visbility
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const API_GATEWAY_ENDPOINT =
     "https://8ybzo5pnt3.execute-api.us-east-1.amazonaws.com/prod/form";
@@ -67,7 +66,7 @@ const ContactPage: React.FC = () => {
     }
     setErrors(newErrors);  
      
-    return isValid
+    return !isValid
    
   }
 
@@ -75,6 +74,7 @@ const ContactPage: React.FC = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     setErrors({ ...errors, [name]: "" });
+    
   };
 
   const handleSubmitMessage = async (e: any) => {
